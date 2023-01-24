@@ -6,14 +6,14 @@ import { HassleFreeIcon } from '@/icons/Icon'
 import { MonthlySubscriptionIcon } from '@/icons/Icon'
 
 interface FeatureProps extends StackProps{
-    icon: ElementType;
+    icon: React.ElementType;
 }
 function Feature(props:FeatureProps) {
   const {icon,children, ...rest} = props;
   return (
     <HStack {...rest} spacing='6'>
       <Icon as={icon} boxSizze='12' />
-      <Text textAlign='left' fontSize='lg' fontWeight='bold' {...rest}>
+      <Text textAlign='left' fontSize='lg' fontWeight='bold' >
         {children}
         </Text>    
 </HStack>
